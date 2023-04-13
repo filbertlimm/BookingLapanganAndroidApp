@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassAdmin.LapanganBelumDipesan"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Lapangan Sudah Dipesan"
+                android:id="@+id/LapSudahDipesan"
+                android:layout_marginRight="150dp"></Button>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Tambah Lapangan"
+                android:id="@+id/btnPageTambah"></Button>
+<!--            <Button-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="List User"-->
+<!--                android:id="@+id/tab23"></Button>-->
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvAdmin2">
+        </androidx.recyclerview.widget.RecyclerView>
+    </TableLayout>
+
+</LinearLayout>

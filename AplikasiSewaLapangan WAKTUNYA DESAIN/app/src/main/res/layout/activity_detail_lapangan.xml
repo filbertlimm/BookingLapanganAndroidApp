@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassUser.DetailLapangan">
+
+    <TextView
+        android:id="@+id/detJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="45dp"
+        android:text="🏀"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detAlamat" />
+
+    <TextView
+        android:id="@+id/tvJenisLapanganLogo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="83dp"
+        android:text="⌚"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detAlamat" />
+
+    <TextView
+        android:id="@+id/tvJenisLapanganLogo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="103dp"
+        android:text="🪙"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJenisLapanganLogo4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="159dp"
+        android:text="Jam Sewa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/detJamMulai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detJenis" />
+
+    <Spinner
+        android:id="@+id/detJamMulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="11dp"
+        android:text="13:00"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/detTanggal"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/tvJenisLapanganLogo4"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="11dp"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/detTanggal"
+        app:layout_constraintEnd_toStartOf="@+id/detJamAkhir"
+        app:layout_constraintStart_toEndOf="@+id/detJamMulai"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Spinner
+        android:id="@+id/detJamAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="11dp"
+        android:text="15:00"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/detTanggal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/detTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="68dp"
+        android:text="dd/mm/yyyy"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detJamMulai" />
+
+    <TextView
+        android:id="@+id/detNama"
+        android:layout_width="370dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="19dp"
+        android:text="Nama Lapangan Nama Lapangan Nama Lapangan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detAlamat"
+        android:layout_width="366dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="9dp"
+        android:text="Jln Jl. Siwalankerto No.121-131, Siwalankerto, Kec. Wonocolo, Kota SBY, Jawa Timur 60236 "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/detJenis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detNama" />
+
+    <Button
+        android:id="@+id/detPesan"
+        android:layout_width="344dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="#4CAF50"
+        android:text="PESAN"
+        android:textSize="34sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detHarga" />
+
+    <TextView
+        android:id="@+id/detHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="1dp"
+        android:text="Rp.150000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tvJenisLapanganLogo5"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="36dp"
+        android:text="Harga"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detTanggal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ClassAdmin.testTambah">
+
+  <TextView
+      android:id="@+id/textView27"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:gravity="center"
+      android:text="Nama Lapangan"
+      android:textStyle="bold" />
+
+  <EditText
+      android:id="@+id/addNamaLap"
+      android:layout_width="294dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="12dp"
+      android:hint="Masukkan Nama Lapangan"
+      android:inputType="text"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <TextView
+      android:id="@+id/textView25"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:gravity="center"
+      android:text="Jenis Lapangan"
+      android:textStyle="bold" />
+
+  <Spinner
+      android:id="@+id/addJenisLap"
+      android:layout_width="198dp"
+      android:layout_height="41dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/addNamaLap" />
+
+  <TextView
+      android:id="@+id/addAlamat"
+      android:layout_width="277dp"
+      android:layout_height="32dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/addJenisLap" />
+
+  <TextView
+      android:id="@+id/textView26"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:gravity="center"
+      android:text="Jam Buka dan Tutup Lapangan"
+      android:textStyle="bold" />
+
+  <EditText
+      android:id="@+id/addJamBuka"
+      android:layout_width="80dp"
+      android:layout_height="43dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:hint="Jam Buka"
+      android:textSize="13dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/addTanggal" />
+
+  <EditText
+      android:id="@+id/addJamTutup"
+      android:layout_width="80dp"
+      android:layout_height="43dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="4dp"
+      android:hint="Jam Tutup"
+      android:textSize="13dp"
+      app:layout_constraintStart_toEndOf="@+id/addJamMulai"
+      app:layout_constraintTop_toBottomOf="@+id/addTanggal" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="183dp"
+      android:layout_height="13dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:text="format jam adalah 24 jam"
+      android:textSize="8dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/addJamMulai" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:gravity="center"
+      android:text="Harga Sewa Per Jam"
+      android:textStyle="bold" />
+
+  <EditText
+      android:id="@+id/addHarga"
+      android:layout_width="299dp"
+      android:layout_height="44dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:hint="Masukkan Harga"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2" />=
+
+  <Button
+      android:id="@+id/konfirmLap"
+      android:layout_width="319dp"
+      android:layout_height="64dp"
+      android:layout_marginStart="44dp"
+      android:layout_marginTop="28dp"
+      android:backgroundTint="#4CAF50"
+      android:gravity="center"
+      android:text="submit"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/addHarga" />
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aplikasisewalapangan" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplikasiSewaLapangan"
+        tools:targetApi="31" >
+        <activity
+            android:name=".ClassAdmin.testTambah"
+            android:exported="false" />
+        <activity
+            android:name=".ClassUser.JadwalJenisLapangan"
+            android:exported="false" />
+        <activity
+            android:name=".ClassUser.DetailLapangan"
+            android:exported="false" />
+        <activity
+            android:name=".ClassAdmin.LapanganSudahDipesan"
+            android:exported="false" />
+        <activity
+            android:name=".ClassAdmin.LapanganBelumDipesan"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".ClassUser.PembayaranUser"
+            android:exported="false" />
+        <activity
+            android:name=".ClassUser.ProfileUser"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ClassUser.KonfirmasiBayar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminApp.MainPageAdminApp3"
+            android:exported="false" />
+        <activity
+            android:name=".AdminApp.MainPageAdminApp2"
+            android:exported="false" />
+        <activity
+            android:name=".AdminApp.MainPageAdminApp"
+            android:exported="false" >
+
+
+        </activity>
+        <activity
+            android:name=".AdminApp.AdminAppLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ClassAdmin.MainPageAdmin"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".ClassAdmin.RegisterAdmin"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".ClassAdmin.LoginAdmin"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".ClassUser.ListJadwal"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".ClassUser.RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".ClassUser.LoginPage"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

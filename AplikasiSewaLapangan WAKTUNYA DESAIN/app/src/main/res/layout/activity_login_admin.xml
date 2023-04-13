@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ClassAdmin.LoginAdmin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="LOGIN ADMIN"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/user3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/pass3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <Button
+        android:id="@+id/login3"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:backgroundTint="#2196F3"
+        android:text="login"></Button>
+
+    <Button
+        android:id="@+id/regis3"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF9800"
+        android:text="Register"></Button>
+
+    <Button
+        android:id="@+id/btn_back2"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="back" />
+
+</LinearLayout>

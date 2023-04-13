@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AdminApp.MainPageAdminApp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tab11"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Belum Verifikasi"></Button>
+
+            <Button
+                android:id="@+id/tab12"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Sudah Verifikasi"></Button>
+
+            <Button
+                android:id="@+id/tab13"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="List User"></Button>
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAdminApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/logout1"
+            android:layout_gravity="right">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </TableLayout>
+
+</LinearLayout>
